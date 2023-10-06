@@ -1,0 +1,36 @@
+{
+    "name": "kstmostofa/dtone-php-api",
+    "description": "A laravel package that support dtone api",
+    "keywords": ["Laravel", "PHP", "dtone", "API", "DT One"],
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kstmostofa\\DtonePhpApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md. Mostafijur Rahman",
+            "email": "mostofa122@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/http": "^8.55|^9.32"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kstmostofa\\DtonePhpApi\\DtoneServiceProvider"
+            ],
+            "aliases": {
+                "Dtone": "Kstmostofa\\DtonePhpApi\\Facades\\DtonePhpApi"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    }
+}
