@@ -15,7 +15,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | api key for themoviedb
+    | api key for dtone test key
     |--------------------------------------------------------------------------
     |
     | Here you may configure the log settings for when a location is not found
