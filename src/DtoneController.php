@@ -6,11 +6,7 @@ use Kstmostofa\DtonePhpApi\Request;
 
 class DtoneController
 {
-    public function search($query, $limit = 25, $offset = 0, $rating = null, $lang = null)
-    {
-        return Request::search('gifs', $query, $limit, $offset, $rating, $lang);
-    }
-
+    
     public function services($page = null, $per_page = null)
     {
         return Request::services($page, $per_page);
